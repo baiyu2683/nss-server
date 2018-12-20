@@ -12,7 +12,7 @@ import io.netty.channel.SimpleChannelInboundHandler;
 public class CommonBufferHandler extends ChannelInboundHandlerAdapter {
 
     @Override
-    protected void channelRead0(ChannelHandlerContext ctx, Object msg) throws Exception {
+    public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
         if (msg instanceof ByteBuf) {
             ByteBuf byteBuf = (ByteBuf) msg;
             System.out.println(PacketUtil.decode(byteBuf));

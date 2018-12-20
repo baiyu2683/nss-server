@@ -4,7 +4,7 @@ import io.netty.handler.codec.FixedLengthFrameDecoder;
 
 public class LengthFrameDecoder extends FixedLengthFrameDecoder {
 
-    public static final Integer FRAMELENGTH = 10;
+    public static final Integer FRAMELENGTH = 50;
 
     public LengthFrameDecoder() {
         super(FRAMELENGTH);

@@ -8,7 +8,6 @@ import io.netty.util.CharsetUtil;
 public class PacketUtil {
 
     /**
-     * 包最大长度为50
      * @see LengthFrameDecoder
      * @param msg
      * @return
